@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="MOH 744B" pageWidth="1000" pageHeight="500" columnWidth="960" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9b071272-af2b-4be1-b6a9-9eece681ca00">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="510"/>
+	<property name="ireport.y" value="36"/>
+	<parameter name="FromDate" class="java.lang.String"/>
+	<parameter name="ToDate" class="java.lang.String"/>
+	<parameter name="CompanyDetials" class="java.lang.String"/>
+	<parameter name="FacilityName" class="java.lang.String"/>
+	<parameter name="KMHFLNo" class="java.lang.String"/>
+	<parameter name="DOMAIN" class="java.lang.String"/>
+	<parameter name="FacilityDetails" class="java.lang.String"/>
+	<field name="DEPARTMENT" class="java.lang.String"/>
+	<field name="ITEM_NAME" class="java.lang.String"/>
+	<field name="ITEM_CODE" class="java.lang.String"/>
+	<field name="UOM" class="java.lang.String"/>
+	<field name="OPENING_BALANCE" class="java.lang.Double"/>
+	<field name="TOTAL_RECEIVED" class="java.lang.Double"/>
+	<field name="TOTAL_DISPENSED" class="java.lang.Double"/>
+	<field name="BREAKAGES_DAMAGES" class="java.lang.Double"/>
+	<field name="POSITIVE_ADJUSTMENT" class="java.lang.Double"/>
+	<field name="NEGATIVE_ADJUSTMENT" class="java.lang.Double"/>
+	<field name="CLOSING_STOCK" class="java.lang.Double"/>
+	<field name="SIX_MONTH_TO_EXPIRE" class="java.lang.Double"/>
+	<field name="EXPIRY_DATE" class="java.lang.String"/>
+	<field name="REORDER_QTY" class="java.lang.Double"/>
+	<field name="ITEM_GROUP" class="java.lang.String"/>
+	<group name="ItemGroup">
+		<groupExpression><![CDATA[$F{ITEM_GROUP}]]></groupExpression>
+		<groupHeader>
+			<band height="20">
+				<textField>
+					<reportElement x="3" y="0" width="291" height="20" uuid="1a9d60ba-db51-4468-9481-abe19230744d"/>
+					<textElement>
+						<font fontName="Times New Roman" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{ITEM_GROUP}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="137" splitType="Stretch">
+			<staticText>
+				<reportElement x="43" y="37" width="938" height="32" uuid="0da1376c-a857-4423-8549-2f2580e46175"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MOH 744B_Facility  Consumption Data Report  and Request (F-CDRR) for Assistive Technology  Products]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="43" y="105" width="147" height="13" uuid="f36bdfad-8592-4ce4-aaad-10d7e09c4b85"/>
+				<textElement>
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Reporting Period: Beginning :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="190" y="105" width="84" height="13" uuid="daec89f4-479e-4268-8e0d-e30109063c32"/>
+				<textElement>
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{FromDate}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="272" y="105" width="47" height="13" uuid="87c8c94d-6e79-4c2f-ad3b-c0cc444d1a49"/>
+				<textElement>
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ Ending]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="319" y="105" width="200" height="13" uuid="38c85b55-24e6-4dbc-a128-721b91a9cdb7"/>
+				<textElement>
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ToDate}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="12" y="80" width="938" height="1" uuid="cfbe7682-ccf6-4cd5-af0c-234e875172f8"/>
+			</line>
+			<textField>
+				<reportElement x="43" y="118" width="476" height="19" uuid="6f48caef-295b-40b7-abae-a76bcf4d1f1c"/>
+				<textElement>
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["DOMAIN :- "+$P{DOMAIN}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="43" y="85" width="905" height="20" uuid="26dcb7bc-3348-44b4-b34c-8ffc08220e9b"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{FacilityDetails}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="32" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="88" y="2" width="226" height="30" forecolor="#000000" backcolor="#3AA6B9" uuid="d046206a-14c2-487d-ab90-6399af0d64a1"/>
+				<box topPadding="5" leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font fontName="Times New Roman" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ITEM_NAME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="2" width="88" height="30" forecolor="#000000" backcolor="#3AA6B9" uuid="94785357-033b-4aeb-b103-a0caa4fd06ae"/>
+				<box topPadding="5" leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font fontName="Times New Roman" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ITEM_CODE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="314" y="2" width="48" height="30" forecolor="#000000" backcolor="#3AA6B9" uuid="edddbfdb-5de2-44d0-ac69-09467c567db7"/>
+				<box topPadding="5" leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font fontName="Times New Roman" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[UOM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="359" y="2" width="60" height="30" forecolor="#000000" backcolor="#3AA6B9" uuid="bdc301c5-5c8b-4c34-9dff-177f48a59f00"/>
+				<box topPadding="5" leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font fontName="Times New Roman" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[OPENING BALANCE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="419" y="2" width="60" height="30" forecolor="#000000" backcolor="#3AA6B9" uuid="0a8f3779-9b26-4208-99db-4ee8e57ac915"/>
+				<box topPadding="5" leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Times New Roman" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TOTAL RECEIVED]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="479" y="2" width="60" height="30" forecolor="#000000" backcolor="#3AA6B9" uuid="76f215e1-8a67-45d8-b139-a6b9e3dd89a7"/>
+				<box topPadding="5" leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Times New Roman" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TOTAL DISPENSED]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="539" y="2" width="68" height="30" forecolor="#000000" backcolor="#3AA6B9" uuid="cd15d31f-ccf7-4b86-baba-3d1e2dce3b1e"/>
+				<box topPadding="5" leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font fontName="Times New Roman" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[POSITIVE ADJUSTMENT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="606" y="2" width="65" height="30" forecolor="#000000" backcolor="#3AA6B9" uuid="85979061-3cd5-4ca4-9c93-33c07fca56c3"/>
+				<box topPadding="5" leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Times New Roman" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NEGATIVE ADJUSTMENT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="670" y="2" width="60" height="30" forecolor="#000000" backcolor="#3AA6B9" uuid="62cfeb31-d610-490c-b77b-1b830e3b09dc"/>
+				<box topPadding="5" leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font fontName="Times New Roman" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CLOSING STOCK]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="729" y="2" width="60" height="30" forecolor="#000000" backcolor="#3AA6B9" uuid="a043b4c1-5d29-47ba-a5a5-40542da04748"/>
+				<box topPadding="5" leftPadding="0" rightPadding="0">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font fontName="Times New Roman" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SIX_MONTH TO_EXPIRE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="789" y="2" width="65" height="30" forecolor="#000000" backcolor="#3AA6B9" uuid="4af30e06-221c-461e-9827-3b6fd1598283"/>
+				<box topPadding="5" leftPadding="0" rightPadding="0">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Times New Roman" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[EXPIRY_DATE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="854" y="2" width="87" height="30" forecolor="#000000" backcolor="#3AA6B9" uuid="8ee1b34d-4e0f-4dff-a8ee-b6cd84aa8765"/>
+				<box topPadding="5" leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Times New Roman" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[REORDER_QTY]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="13" splitType="Stretch">
+			<textField>
+				<reportElement mode="Transparent" x="88" y="0" width="226" height="13" backcolor="#FFFFFF" uuid="d0a72122-14eb-46f8-a1f1-7cd9b70da6fe"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+					<topPen lineWidth="0.5" lineStyle="Solid"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font fontName="Tahoma" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ITEM_NAME}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="0" y="0" width="88" height="13" backcolor="#FFFFFF" uuid="120f4df6-a8fa-472a-bed2-a0f17f10ab23"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+					<topPen lineWidth="0.5" lineStyle="Solid"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font fontName="Tahoma" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ITEM_CODE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="314" y="0" width="45" height="13" backcolor="#FFFFFF" uuid="e6288cdc-dd73-4bd3-8182-72ceec5b6528"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+					<topPen lineWidth="0.5" lineStyle="Solid"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font fontName="Tahoma" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{UOM}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="359" y="0" width="60" height="13" backcolor="#FFFFFF" uuid="13b53239-87f9-477b-9143-99bc9067694d"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+					<topPen lineWidth="0.5" lineStyle="Solid"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font fontName="Tahoma" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{OPENING_BALANCE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="419" y="0" width="60" height="13" backcolor="#FFFFFF" uuid="b841565f-89a1-4832-a4e0-58d1ad302bd0"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+					<topPen lineWidth="0.5" lineStyle="Solid"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{TOTAL_RECEIVED}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="479" y="0" width="60" height="13" backcolor="#FFFFFF" uuid="7547f252-fe16-4169-bc3e-eb39a7fab355"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+					<topPen lineWidth="0.5" lineStyle="Solid"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{TOTAL_DISPENSED}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="539" y="0" width="68" height="13" backcolor="#FFFFFF" uuid="190f9b0d-9fde-48e0-b4a2-cc8bf04ab83e"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+					<topPen lineWidth="0.5" lineStyle="Solid"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font fontName="Tahoma" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{POSITIVE_ADJUSTMENT}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="607" y="0" width="63" height="13" backcolor="#FFFFFF" uuid="68912185-efe4-4adb-b93e-af437fe1c855"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+					<topPen lineWidth="0.5" lineStyle="Solid"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{NEGATIVE_ADJUSTMENT}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="670" y="0" width="59" height="13" backcolor="#FFFFFF" uuid="aae93cf4-e30e-4b8f-8d57-a7609114e732"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+					<topPen lineWidth="0.5" lineStyle="Solid"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font fontName="Tahoma" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CLOSING_STOCK}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="729" y="0" width="60" height="13" backcolor="#FFFFFF" uuid="e8cfb74e-6ed5-423d-83d1-cbe56ffab800"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+					<topPen lineWidth="0.5" lineStyle="Solid"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font fontName="Tahoma" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{SIX_MONTH_TO_EXPIRE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="789" y="0" width="65" height="13" backcolor="#FFFFFF" uuid="4c714c20-6657-452c-85eb-9820f9a5f250"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+					<topPen lineWidth="0.5" lineStyle="Solid"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Tahoma" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{EXPIRY_DATE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="854" y="0" width="87" height="13" backcolor="#FFFFFF" uuid="a9dd1381-d1f2-448c-a11d-41227037bc7a"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+					<topPen lineWidth="0.5" lineStyle="Solid"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{REORDER_QTY}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="2" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="13" splitType="Stretch">
+			<textField>
+				<reportElement x="822" y="0" width="80" height="13" uuid="d040e1ff-b455-46d0-9ee0-7ece81b52cb7"/>
+				<textElement textAlignment="Right">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="902" y="0" width="40" height="13" uuid="0d91dfa9-a181-40ad-9559-040b7150e70d"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="176" splitType="Stretch">
+			<rectangle>
+				<reportElement x="3" y="14" width="55" height="45" uuid="993e3fee-ffe8-4bc8-946a-656b3e700a4f"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="3" y="29" width="55" height="16" uuid="927f4881-3d34-4050-a9e8-399c9ec84a0e"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[REMARKS]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="58" y="14" width="475" height="45" uuid="0bd5fc78-a173-4753-8a44-603febc1c09a"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</rectangle>
+			<line>
+				<reportElement x="58" y="30" width="475" height="1" uuid="ab3d0c38-30b5-45e7-a6f0-02198ddc9212"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="58" y="44" width="475" height="1" uuid="84814e5c-6302-45dc-b6da-4820e24f2224"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="3" y="74" width="85" height="20" uuid="0d84e125-2984-4383-9fea-26e0552d5b81"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Report prepared by:
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="94" width="85" height="20" uuid="59224a95-9cc8-42b2-b8ab-052eae17052d"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Contact Telephone:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="328" y="94" width="64" height="20" uuid="2b77f4a6-fa61-4c23-a3c3-536c53ec2ace"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[DATE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="328" y="74" width="64" height="20" uuid="12f4a7de-6866-4223-80ec-1893a2eabfbc"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[SIGNATURE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="638" y="74" width="46" height="20" uuid="c8bf3fbd-2c8c-46ae-997f-c461d231938e"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Designation:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="84" y="114" width="210" height="1" uuid="4b73f132-0fef-4edb-8fe0-f75c676e3467"/>
+			</line>
+			<line>
+				<reportElement x="84" y="93" width="210" height="1" uuid="af8134b5-3f84-44be-8b6c-40071a599f5b"/>
+			</line>
+			<line>
+				<reportElement x="390" y="115" width="210" height="1" uuid="dfff4b05-e054-4bdb-ae0f-9b58067373fd"/>
+			</line>
+			<line>
+				<reportElement x="390" y="94" width="210" height="1" uuid="565ac05d-67e5-4fa4-b530-c75a418d450b"/>
+			</line>
+			<line>
+				<reportElement x="684" y="95" width="264" height="1" uuid="aa4d0892-6a71-442b-aba0-d6f9306c97fe"/>
+			</line>
+			<line>
+				<reportElement x="390" y="154" width="210" height="1" uuid="9d2d405f-9091-4d19-959f-98e61c72c071"/>
+			</line>
+			<staticText>
+				<reportElement x="3" y="134" width="85" height="20" uuid="cadfe6b7-adb3-4d6f-b17e-1458d7f707b7"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Report approved by:
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="154" width="85" height="20" uuid="66955a82-6e4c-4624-847d-5b490b0974cb"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Contact Telephone:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="684" y="155" width="264" height="1" uuid="9c2dd04d-e726-44d3-9c68-338dbe88318b"/>
+			</line>
+			<line>
+				<reportElement x="390" y="175" width="210" height="1" uuid="2996a1ca-a100-4b0f-9ca7-654456300d64"/>
+			</line>
+			<line>
+				<reportElement x="84" y="174" width="210" height="1" uuid="a50075e5-2f96-4307-ba19-442f14142e10"/>
+			</line>
+			<staticText>
+				<reportElement x="328" y="134" width="64" height="20" uuid="dffda2bb-7651-4a17-a1da-3f6149ed52fc"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[SIGNATURE]]></text>
+			</staticText>
+			<line>
+				<reportElement x="84" y="153" width="210" height="1" uuid="6bde1129-2a9f-4fe9-8266-285c0de48a68"/>
+			</line>
+			<staticText>
+				<reportElement x="638" y="134" width="46" height="20" uuid="7d515908-dbc6-4eb0-8868-736117cda0da"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Designation:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="328" y="154" width="64" height="20" uuid="6f92b8a8-0a31-423c-a0c9-258fc23881f1"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[DATE]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>
