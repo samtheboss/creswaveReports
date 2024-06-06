@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Register MOH 420" pageWidth="1684" pageHeight="1190" orientation="Landscape" columnWidth="1644" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="207d11cf-ae15-424f-b774-a14b9b7315a2">
 	<property name="ireport.zoom" value="1.0"/>
-	<property name="ireport.x" value="0"/>
+	<property name="ireport.x" value="130"/>
 	<property name="ireport.y" value="0"/>
 	<style name="table">
 		<box>
@@ -71,7 +71,7 @@
 				<reportElement x="240" y="485" width="1049" height="160" uuid="5e4ee14f-2af2-4bfb-b3ac-9f42bbf6013f"/>
 			</rectangle>
 			<staticText>
-				<reportElement x="240" y="433" width="1049" height="52" uuid="81e673cc-769b-437d-92a3-f9bbb5bd4dcf"/>
+				<reportElement x="240" y="86" width="1049" height="52" uuid="81e673cc-769b-437d-92a3-f9bbb5bd4dcf"/>
 				<textElement textAlignment="Center">
 					<font fontName="Times New Roman" size="40" isBold="true"/>
 				</textElement>
@@ -210,9 +210,18 @@
 				<text><![CDATA[Start Date:]]></text>
 			</staticText>
 			<image scaleImage="RealSize" onErrorType="Blank">
-				<reportElement x="629" y="129" width="261" height="169" uuid="41e6ae62-c4d9-4f95-9c05-ddfe0189ffab"/>
+				<reportElement x="629" y="174" width="261" height="169" uuid="41e6ae62-c4d9-4f95-9c05-ddfe0189ffab"/>
 				<imageExpression><![CDATA[$P{logo}]]></imageExpression>
 			</image>
+			<staticText>
+				<reportElement x="228" y="383" width="1049" height="52" uuid="d01c5c35-01e8-483b-9e0c-41c491114e39"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="40" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ Orthopaedic Technology (Prosthetics and Orthotics) Register   MOH 420
+
+]]></text>
+			</staticText>
 		</band>
 	</title>
 	<columnHeader>
