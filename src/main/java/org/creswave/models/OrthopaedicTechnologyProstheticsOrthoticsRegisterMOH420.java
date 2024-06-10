@@ -3,7 +3,7 @@ package org.creswave.models;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RegisterMOH420 {
+public class OrthopaedicTechnologyProstheticsOrthoticsRegisterMOH420 {
     private String SERIAL_NO;
     private String DATE;
     private String OP_IP_NUMBER;
@@ -31,7 +31,7 @@ public class RegisterMOH420 {
     private String TIMELINES;
     private String NAME_AND_SIGNATURE;
 
-    public RegisterMOH420() {
+    public OrthopaedicTechnologyProstheticsOrthoticsRegisterMOH420() {
     }
 
     public String getSERIAL_NO() {
@@ -241,10 +241,10 @@ public class RegisterMOH420 {
     public void setNAME_AND_SIGNATURE(String NAME_AND_SIGNATURE) {
         this.NAME_AND_SIGNATURE = NAME_AND_SIGNATURE;
     }
-    public static List<RegisterMOH420> populateRecords() {
-    List<RegisterMOH420> records = new ArrayList<>();
+    public static List<OrthopaedicTechnologyProstheticsOrthoticsRegisterMOH420> populateRecords() {
+    List<OrthopaedicTechnologyProstheticsOrthoticsRegisterMOH420> records = new ArrayList<>();
         for (int i = 1; i <= 30; i++) {
-            RegisterMOH420 record = new RegisterMOH420();
+            OrthopaedicTechnologyProstheticsOrthoticsRegisterMOH420 record = new OrthopaedicTechnologyProstheticsOrthoticsRegisterMOH420();
             record.setSERIAL_NO("Serial " + i);
             record.setDATE("2024-06-05");
             record.setOP_IP_NUMBER("OP" + i);

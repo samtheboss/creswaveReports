@@ -1,0 +1,956 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="SpeechLanguageTherapyRegisterMOH418" pageWidth="2100" pageHeight="1684" orientation="Landscape" columnWidth="2060" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7cac1390-248b-4a88-8f9e-fd08727e24cd">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="1100"/>
+	<property name="ireport.y" value="273"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="ConnectionBeam" uuid="87f31a71-3d8b-4c74-b647-74f47463979b">
+		<field name="SERIAL_NO" class="java.lang.String"/>
+		<field name="DATE" class="java.lang.String"/>
+		<field name="NAME" class="java.lang.String"/>
+		<field name="AGE" class="java.lang.Integer"/>
+		<field name="NATURE_OF_VISIT" class="java.lang.String"/>
+		<field name="SEX" class="java.lang.String"/>
+		<field name="PATIENT_NUMBER" class="java.lang.String"/>
+		<field name="COUNTY" class="java.lang.String"/>
+		<field name="PHYSICAL_ADDRESS" class="java.lang.String"/>
+		<field name="OCCUPATION" class="java.lang.String"/>
+		<field name="TEL_CONTACT" class="java.lang.String"/>
+		<field name="NEXT_OF_KIN_TELEPHONE_CONTACT" class="java.lang.String"/>
+		<field name="SLT_BROAD_CATEGORIES" class="java.lang.String"/>
+		<field name="MEDICAL_DIAGNOSIS" class="java.lang.String"/>
+		<field name="SLT_DIAGNOSIS" class="java.lang.String"/>
+		<field name="DISABILITY_ASSESSMENT" class="java.lang.String"/>
+		<field name="ASSISTIVE_TECHNOLOGY_SERVICES" class="java.lang.String"/>
+		<field name="SPECIFIC_ASSISTIVE_PRODUCT" class="java.lang.String"/>
+		<field name="TREATMENT_INTERVENTIONS" class="java.lang.String"/>
+		<field name="TOTAL_TREATMENT_INTERVENTIONS" class="java.lang.Integer"/>
+		<field name="PAYMENT_MODE" class="java.lang.String"/>
+		<field name="AMOUNT_KSH" class="java.lang.Double"/>
+		<field name="RECEIPT_INVOICE_NUMBER" class="java.lang.String"/>
+		<field name="REFERRALS_IN" class="java.lang.String"/>
+		<field name="REFERRAL_OUT" class="java.lang.String"/>
+		<field name="REMARKS_OUTCOMES" class="java.lang.String"/>
+		<field name="TCA" class="java.lang.String"/>
+		<field name="OFFICER_ATTENDING" class="java.lang.String"/>
+	</subDataset>
+	<parameter name="CollectionBeanParam" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="COUNTY" class="java.lang.String"/>
+	<parameter name="SUB_COUNTY" class="java.lang.String"/>
+	<parameter name="HEALTH_FACILITY" class="java.lang.String"/>
+	<parameter name="KMHFL_CODE" class="java.lang.String"/>
+	<parameter name="FACILITY_TYPE" class="java.lang.String"/>
+	<parameter name="SERVICE_AREA" class="java.lang.String"/>
+	<parameter name="START_DATE" class="java.lang.String"/>
+	<parameter name="MANNING_AGENCY" class="java.lang.String"/>
+	<parameter name="END_DATE" class="java.lang.String"/>
+	<parameter name="logo" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="587" splitType="Stretch">
+			<rectangle>
+				<reportElement x="250" y="409" width="1049" height="160" uuid="257ac903-f8ca-4530-b6f1-11ca48ddfe7b"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="250" y="10" width="1049" height="52" uuid="f87d8d59-046a-484f-9273-e6d76211e5eb"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="40" isBold="true"/>
+				</textElement>
+				<text><![CDATA[  Republic of Kenya – Ministry of Health
+]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="483" y="409" width="790" height="20" uuid="2611a433-f45a-4a30-b104-446c1cc1a10b"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{COUNTY}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="250" y="434" width="1049" height="1" uuid="4ea354c1-bd98-4cf9-8b99-d125c07d84cd"/>
+			</line>
+			<line>
+				<reportElement x="250" y="458" width="1049" height="1" uuid="d2d31a80-f8b4-4a6d-a679-1277fd38865d"/>
+			</line>
+			<line>
+				<reportElement x="250" y="479" width="1049" height="1" uuid="53f77b57-9c5c-42e2-868e-8e6b90ad7479"/>
+			</line>
+			<line>
+				<reportElement x="250" y="504" width="1049" height="1" uuid="c3250e70-1172-47b3-9676-c3ea9f77da99"/>
+			</line>
+			<line>
+				<reportElement x="250" y="526" width="1049" height="1" uuid="40b55b3a-b5af-4d15-8641-a43da4f40204"/>
+			</line>
+			<line>
+				<reportElement x="472" y="409" width="1" height="160" uuid="0d82743d-cfbc-406a-8a49-3f445685961e"/>
+			</line>
+			<textField>
+				<reportElement x="483" y="439" width="790" height="20" uuid="1b2415fb-8897-4ced-8262-9f0a4c9b5826"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{SUB_COUNTY}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="483" y="459" width="790" height="20" uuid="aa5f3739-3838-4a6f-a511-3cb2613adb35"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{HEALTH_FACILITY}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="483" y="485" width="100" height="20" uuid="ef719e10-187c-4f99-8c95-fdb70e1a1f21"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{KMHFL_CODE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="483" y="507" width="100" height="20" uuid="f06728fb-769f-4fff-bade-9a99a2e9b132"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{FACILITY_TYPE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="483" y="548" width="171" height="20" uuid="92f511fd-d8f9-4280-a041-bc4491a3cce4"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{START_DATE}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="802" y="524" width="1" height="45" uuid="4ed771e5-bfa8-4bc5-981c-0f2990aa8021"/>
+			</line>
+			<textField>
+				<reportElement x="926" y="548" width="286" height="20" uuid="11835a67-ceee-42d9-a329-b81aa5fd987e"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{END_DATE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="926" y="528" width="277" height="20" uuid="6b5ad2a5-2313-41fd-b49a-6b788c25b998"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{MANNING_AGENCY}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="287" y="409" width="174" height="20" uuid="82b6f0af-3ddb-4576-94b6-86c2c91c0735"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[County:
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="287" y="439" width="174" height="20" uuid="c754db46-4831-41a9-bbb8-f4679c447fb4"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Sub County:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="287" y="459" width="174" height="20" uuid="8b8a954e-7a29-4cd5-9356-157dc4300939"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Health Facility:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="287" y="485" width="174" height="20" uuid="f1d6c66f-cea1-4d18-b8b6-56f49d2c21d4"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[KMHFL Code:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="287" y="507" width="174" height="20" uuid="1451f2e1-3b4f-44ee-bd9d-3da77a7c7372"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Facility Type:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="287" y="529" width="174" height="20" uuid="8d2ee353-75ab-4a2a-82e6-d28a0b9986b7"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Service Area:
+]]></text>
+			</staticText>
+			<line>
+				<reportElement x="250" y="548" width="1049" height="1" uuid="f8a6e45c-6a3e-4617-ab21-53d245756254"/>
+			</line>
+			<staticText>
+				<reportElement x="287" y="549" width="174" height="20" uuid="958ea5a6-238c-4679-b8a5-6bf78fa2bf30"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Start Date:]]></text>
+			</staticText>
+			<image scaleImage="RealSize" onErrorType="Blank">
+				<reportElement x="639" y="98" width="261" height="169" uuid="35fcb6e2-7c1a-43b9-aa7e-bf866faeeca0"/>
+				<imageExpression><![CDATA[$P{logo}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="238" y="307" width="1049" height="52" uuid="7d5af723-4675-4e4b-b693-8c627769e618"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="40" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Speech and Language Therapy Register MOH 418
+
+
+]]></text>
+			</staticText>
+			<break>
+				<reportElement x="0" y="586" width="100" height="1" uuid="f9d2ed0e-cc46-4727-b81d-081bd77dcd6a"/>
+			</break>
+		</band>
+	</title>
+	<detail>
+		<band height="36" splitType="Stretch">
+			<componentElement>
+				<reportElement key="table" style="table" x="0" y="0" width="2000" height="36" uuid="5721f084-417a-4d22-a05d-46df644d65dd"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="ConnectionBeam" uuid="daf42964-ab26-41b0-a6d1-c3614c45b04f">
+						<dataSourceExpression><![CDATA[$P{CollectionBeanParam}]]></dataSourceExpression>
+					</datasetRun>
+					<jr:column width="50" uuid="81f599eb-84ae-49c9-908d-abcbaff756b4">
+						<jr:tableHeader style="table_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table_TH" height="11" rowSpan="1"/>
+						<jr:columnHeader style="table_CH" height="104" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="50" height="100" uuid="c173a59e-5c2e-40ce-8e1d-4dee57614eef"/>
+								<box leftPadding="5" rightPadding="5"/>
+								<textElement rotation="Left">
+									<font fontName="Times New Roman" size="8" isBold="true"/>
+								</textElement>
+								<text><![CDATA[S/NO.
+]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table_TD" height="13" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="50" height="13" isPrintWhenDetailOverflows="true" uuid="be173a23-aefc-4843-876e-42cbeab225d4"/>
+								<box leftPadding="5" rightPadding="5"/>
+								<textElement textAlignment="Right">
+									<font fontName="Times New Roman" size="8"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{SERIAL_NO}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="60" uuid="851f9252-6945-4481-9f09-13e280ceb271">
+						<jr:tableHeader style="table_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table_TH" height="11" rowSpan="1"/>
+						<jr:columnHeader style="table_CH" height="104" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="60" height="100" uuid="0c42be37-a3a7-4c2c-8786-514e3f838520"/>
+								<box leftPadding="5" rightPadding="5"/>
+								<textElement rotation="Left">
+									<font fontName="Times New Roman" size="8" isBold="true"/>
+								</textElement>
+								<text><![CDATA[DATE]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table_TD" height="13" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="60" height="13" isPrintWhenDetailOverflows="true" uuid="741fc9d2-433c-4d38-be70-53deefdcc37a"/>
+								<box leftPadding="5" rightPadding="5"/>
+								<textElement>
+									<font fontName="Times New Roman" size="8"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{DATE}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="130" uuid="9503d59a-27d9-48a4-8db2-ff98369f02e1">
+						<jr:tableHeader style="table_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table_TH" height="11" rowSpan="1"/>
+						<jr:columnHeader style="table_CH" height="104" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="100" uuid="4a7eee16-ff16-4632-a728-31df4488d841"/>
+								<box leftPadding="5" rightPadding="5"/>
+								<textElement rotation="Left">
+									<font fontName="Times New Roman" size="8" isBold="true"/>
+								</textElement>
+								<text><![CDATA[NAME]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table_TD" height="13" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="130" height="13" isPrintWhenDetailOverflows="true" uuid="304d01a8-17ad-41fb-95fe-bb10eef6019f"/>
+								<box leftPadding="5" rightPadding="5"/>
+								<textElement>
+									<font fontName="Times New Roman" size="8"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{NAME}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="40" uuid="d7ece5d7-f27c-4dfd-acea-cba66d6bafb1">
+						<jr:tableHeader style="table_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table_TH" height="11" rowSpan="1"/>
+						<jr:columnHeader style="table_CH" height="104" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="40" height="100" uuid="b50fecf1-873e-446a-b6ff-2e151a3f2653"/>
+								<box leftPadding="5" rightPadding="5"/>
+								<textElement rotation="Left">
+									<font fontName="Times New Roman" size="8" isBold="true"/>
+								</textElement>
+								<text><![CDATA[AGE]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table_TD" height="13" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="40" height="13" isPrintWhenDetailOverflows="true" uuid="6f1797cd-26c9-41a1-9eb3-0e9cafbfa45c"/>
+								<box leftPadding="5" rightPadding="5"/>
+								<textElement>
+									<font fontName="Times New Roman" size="8"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{AGE}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="45" uuid="ca52b505-05b0-43bd-9262-af83f3b8b06e">
+						<jr:tableHeader style="table_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table_TH" height="11" rowSpan="1"/>
+						<jr:columnHeader style="table_CH" height="104" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="45" height="100" uuid="c76d5af4-35a1-4f48-9f05-50d1973eec4e"/>
+								<box leftPadding="5" rightPadding="5"/>
+								<textElement rotation="Left">
+									<font fontName="Times New Roman" size="8" isBold="true"/>
+								</textElement>
+								<text><![CDATA[NATURE OF VISIT]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table_TD" height="13" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="45" height="13" isPrintWhenDetailOverflows="true" uuid="738f456a-2a0d-4b02-b496-10ee33bb0d4a"/>
+								<box leftPadding="5" rightPadding="5"/>
+								<textElement>
+									<font fontName="Times New Roman" size="8"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{NATURE_OF_VISIT}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="51" uuid="16d4bb4c-070d-4bb6-bc67-43a6cfb05d74">
+						<jr:tableHeader style="table_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table_TH" height="11" rowSpan="1"/>
+						<jr:columnHeader style="table_CH" height="104" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="51" height="100" uuid="dafd22e5-570f-4d36-b785-5fece6ffac30"/>
+								<box leftPadding="5" rightPadding="5"/>
+								<textElement rotation="Left">
+									<font fontName="Times New Roman" size="8" isBold="true"/>
+								</textElement>
+								<text><![CDATA[SEX]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table_TD" height="13" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="51" height="13" isPrintWhenDetailOverflows="true" uuid="09d73bdb-c3e8-46ce-8a9d-35d74a762b4c"/>
+								<box leftPadding="5" rightPadding="5"/>
+								<textElement>
+									<font fontName="Times New Roman" size="8"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{SEX}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="49" uuid="75e41018-474f-41a1-8ed0-fca7d25cfb63">
+						<jr:tableHeader style="table_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table_TH" height="11" rowSpan="1"/>
+						<jr:columnHeader style="table_CH" height="104" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="49" height="100" uuid="88103abe-332e-4012-bc16-d496d4bee5a7"/>
+								<box leftPadding="5" rightPadding="5"/>
+								<textElement rotation="Left">
+									<font fontName="Times New Roman" size="8" isBold="true"/>
+								</textElement>
+								<text><![CDATA[PATIENT NUMBER]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table_TD" height="13" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="49" height="13" isPrintWhenDetailOverflows="true" uuid="8641e1a3-ef77-4ff5-b88d-ab007db866cc"/>
+								<box leftPadding="5" rightPadding="5"/>
+								<textElement>
+									<font fontName="Times New Roman" size="8"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{PATIENT_NUMBER}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="62" uuid="0841e4d0-a994-4150-bb90-6ff329bff2b6">
+						<jr:tableHeader style="table_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table_TH" height="11" rowSpan="1"/>
+						<jr:columnHeader style="table_CH" height="104" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="62" height="100" uuid="0ef6e476-bd88-49ef-bc55-95aa7dde177a"/>
+								<box leftPadding="5" rightPadding="5"/>
+								<textElement rotation="Left">
+									<font fontName="Times New Roman" size="8" isBold="true"/>
+								</textElement>
+								<text><![CDATA[COUNTY]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table_TD" height="13" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="62" height="13" isPrintWhenDetailOverflows="true" uuid="b393d303-37a0-4c7d-9c08-6905c809007a"/>
+								<box leftPadding="5" rightPadding="5"/>
+								<textElement>
+									<font fontName="Times New Roman" size="8"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{COUNTY}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="357355e9-f0a0-430d-8581-0aaa6391f371">
+						<jr:tableHeader style="table_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table_TH" height="11" rowSpan="1"/>
+						<jr:columnHeader style="table_CH" height="104" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="62" height="100" uuid="ff193725-31ff-4126-acec-207b8a9d80e1"/>
+								<box leftPadding="5" rightPadding="5"/>
+								<textElement rotation="Left">
+									<font fontName="Times New Roman" size="8" isBold="true"/>
+								</textElement>
+								<text><![CDATA[PHYSICAL ADDRESS]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table_TD" height="13" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="90" height="13" isPrintWhenDetailOverflows="true" uuid="9ed3fe5f-49b2-43f7-8b08-21b7e55fbf3d"/>
+								<box leftPadding="5" rightPadding="5"/>
+								<textElement>
+									<font fontName="Times New Roman" size="8"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{PHYSICAL_ADDRESS}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="74" uuid="1eb0d3b8-1ab3-41f3-ac8e-b024d9f2b10d">
+						<jr:tableHeader style="table_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table_TH" height="11" rowSpan="1"/>
+						<jr:columnHeader style="table_CH" height="104" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="74" height="100" uuid="eb5552e6-f204-457e-8962-5b9f0f2e7897"/>
+								<box leftPadding="5" rightPadding="5"/>
+								<textElement rotation="Left">
+									<font fontName="Times New Roman" size="8" isBold="true"/>
+								</textElement>
+								<text><![CDATA[OCCUPATION]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table_TD" height="13" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="74" height="13" isPrintWhenDetailOverflows="true" uuid="fa80c666-c0f8-4d89-ac2b-20b260fb3d1d"/>
+								<box leftPadding="5" rightPadding="5"/>
+								<textElement>
+									<font fontName="Times New Roman" size="8"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{OCCUPATION}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="70" uuid="d0196dac-4e33-4331-aad9-9741b0cfd236">
+						<jr:tableHeader style="table_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table_TH" height="11" rowSpan="1"/>
+						<jr:columnHeader style="table_CH" height="104" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="70" height="100" uuid="25809ab5-016e-41dd-99ab-184d312bc59e"/>
+								<box leftPadding="5" rightPadding="5"/>
+								<textElement rotation="Left">
+									<font fontName="Times New Roman" size="8" isBold="true"/>
+								</textElement>
+								<text><![CDATA[TELEPHONE CONTACT]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table_TD" height="13" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="70" height="13" isPrintWhenDetailOverflows="true" uuid="f80c63ff-b516-431b-bb72-9091cf3e83b2"/>
+								<box leftPadding="5" rightPadding="5"/>
+								<textElement>
+									<font fontName="Times New Roman" size="8"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{TEL_CONTACT}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="60" uuid="d19287c3-6f21-4d98-9bf1-d16889fee60b">
+						<jr:tableHeader style="table_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table_TH" height="11" rowSpan="1"/>
+						<jr:columnHeader style="table_CH" height="104" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="60" height="100" uuid="17cff0ff-3d1b-46d9-addd-8c5a11ec0c8b"/>
+								<box leftPadding="5" rightPadding="5"/>
+								<textElement rotation="Left">
+									<font fontName="Times New Roman" size="8" isBold="true"/>
+								</textElement>
+								<text><![CDATA[NEXT OF KIN CONTACT]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table_TD" height="13" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="60" height="13" isPrintWhenDetailOverflows="true" uuid="e4740464-462b-424a-b1a2-d3da45f5827d"/>
+								<box leftPadding="5" rightPadding="5"/>
+								<textElement>
+									<font fontName="Times New Roman" size="8"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{NEXT_OF_KIN_TELEPHONE_CONTACT}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="50" uuid="dd3d32e7-a62c-4abb-8a57-6d29eaffc1fa">
+						<jr:tableHeader style="table_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table_TH" height="11" rowSpan="1"/>
+						<jr:columnHeader style="table_CH" height="104" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="50" height="100" uuid="a8816aaf-d1a4-4878-b0d1-a9eb7dab3031"/>
+								<box leftPadding="5" rightPadding="5"/>
+								<textElement rotation="Left">
+									<font fontName="Times New Roman" size="8" isBold="true"/>
+								</textElement>
+								<text><![CDATA[SLT Broad categories 1. Speech  2. Language 3. Voice 4. Fluency 5. Dysphagia 6. Multiple
+]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table_TD" height="13" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="50" height="13" isPrintWhenDetailOverflows="true" uuid="dc6901a0-6a05-401e-b962-2b9f15b8e761"/>
+								<box leftPadding="5" rightPadding="5"/>
+								<textElement>
+									<font fontName="Times New Roman" size="8"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{SLT_BROAD_CATEGORIES}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="a806d23f-11d9-4bb2-808c-e7a2123ce5ad">
+						<jr:tableHeader style="table_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table_TH" height="11" rowSpan="1"/>
+						<jr:columnHeader style="table_CH" height="104" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="100" uuid="106a5ef7-f821-4368-83dc-3b7ec28372ad"/>
+								<box leftPadding="5" rightPadding="5"/>
+								<textElement rotation="Left">
+									<font fontName="Times New Roman" size="8" isBold="true"/>
+								</textElement>
+								<text><![CDATA[MEDICAL DIAGNOSIS]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table_TD" height="13" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="90" height="13" isPrintWhenDetailOverflows="true" uuid="db165964-2019-4ef1-a774-1d480bfa340e"/>
+								<box leftPadding="5" rightPadding="5"/>
+								<textElement>
+									<font fontName="Times New Roman" size="8"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{MEDICAL_DIAGNOSIS}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="f577f3c2-5eb5-419e-8b56-12358c19acd5">
+						<jr:tableHeader style="table_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table_TH" height="11" rowSpan="1"/>
+						<jr:columnHeader style="table_CH" height="104" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="100" uuid="fc9a71d5-6221-4560-960a-28a9734f1c90"/>
+								<box leftPadding="5" rightPadding="5"/>
+								<textElement rotation="Left">
+									<font fontName="Times New Roman" size="8" isBold="true"/>
+								</textElement>
+								<text><![CDATA[SLT DIANOSIS]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table_TD" height="13" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="90" height="13" isPrintWhenDetailOverflows="true" uuid="590b15c8-e687-49e9-98ea-89613656a33e"/>
+								<box leftPadding="5" rightPadding="5"/>
+								<textElement>
+									<font fontName="Times New Roman" size="8"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{SLT_DIAGNOSIS}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="93a1c4d8-87cb-419a-9c70-03722cbccbeb">
+						<jr:tableHeader style="table_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table_TH" height="11" rowSpan="1"/>
+						<jr:columnHeader style="table_CH" height="104" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="88" uuid="b7332180-5949-46dc-b35c-e7d69d65eb89"/>
+								<box leftPadding="5" rightPadding="5"/>
+								<textElement rotation="Left">
+									<font fontName="Times New Roman" size="8" isBold="true"/>
+								</textElement>
+								<text><![CDATA[DISABILITY ASSESSMENT]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table_TD" height="13" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="90" height="13" isPrintWhenDetailOverflows="true" uuid="94418563-18db-4b7f-8e31-e2c2a3d82605"/>
+								<box leftPadding="5" rightPadding="5"/>
+								<textElement>
+									<font fontName="Times New Roman" size="8"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{DISABILITY_ASSESSMENT}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="68ccf86b-99b4-4648-a4ad-7083b9a751c0">
+						<jr:tableHeader style="table_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table_TH" height="11" rowSpan="1"/>
+						<jr:columnHeader style="table_CH" height="104" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="100" uuid="da26768e-ec97-44a1-b547-55e50229b90d"/>
+								<box leftPadding="5" rightPadding="5"/>
+								<textElement rotation="Left">
+									<font fontName="Times New Roman" size="8" isBold="true"/>
+								</textElement>
+								<text><![CDATA[ASSISTIVE TECHNOLOGY SERVICES]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table_TD" height="13" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="90" height="13" isPrintWhenDetailOverflows="true" uuid="34238af7-ff2c-4bf3-b13a-0e1ff5205824"/>
+								<box leftPadding="5" rightPadding="5"/>
+								<textElement>
+									<font fontName="Times New Roman" size="8"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{ASSISTIVE_TECHNOLOGY_SERVICES}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="584c715a-880c-4f63-9913-34073147e877">
+						<jr:tableHeader style="table_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table_TH" height="11" rowSpan="1"/>
+						<jr:columnHeader style="table_CH" height="104" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="100" uuid="6e59d1d7-09b8-4832-982a-17a48a992c66"/>
+								<box leftPadding="5" rightPadding="5"/>
+								<textElement rotation="Left">
+									<font fontName="Times New Roman" size="8" isBold="true"/>
+								</textElement>
+								<text><![CDATA[SPECIFIC ASSISTIVE PRODUCT]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table_TD" height="13" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="90" height="13" isPrintWhenDetailOverflows="true" uuid="742c18ca-290b-4f68-88da-cf280778da7a"/>
+								<box leftPadding="5" rightPadding="5"/>
+								<textElement>
+									<font fontName="Times New Roman" size="8"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{SPECIFIC_ASSISTIVE_PRODUCT}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="090f49ef-e40d-40b8-97e9-2005170710b7">
+						<jr:tableHeader style="table_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table_TH" height="11" rowSpan="1"/>
+						<jr:columnHeader style="table_CH" height="104" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="100" uuid="32a07885-2ec5-4d42-a5c3-263004405966"/>
+								<box leftPadding="5" rightPadding="5"/>
+								<textElement rotation="Left">
+									<font fontName="Times New Roman" size="8" isBold="true"/>
+								</textElement>
+								<text><![CDATA[TREATMENT INTERVENTIONS]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table_TD" height="13" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="90" height="13" isPrintWhenDetailOverflows="true" uuid="554fa8e9-55d3-4e2b-8a2a-1f73ce5ee366"/>
+								<box leftPadding="5" rightPadding="5"/>
+								<textElement>
+									<font fontName="Times New Roman" size="8"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{TREATMENT_INTERVENTIONS}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="60" uuid="c88f2cc8-efe3-427c-bcfa-e8ec1e772dd0">
+						<jr:tableHeader style="table_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table_TH" height="11" rowSpan="1"/>
+						<jr:columnHeader style="table_CH" height="104" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="60" height="100" uuid="5e3d66b9-e2bb-4ae8-9309-089f69377d3d"/>
+								<box leftPadding="5" rightPadding="5"/>
+								<textElement rotation="Left">
+									<font fontName="Times New Roman" size="8" isBold="true"/>
+								</textElement>
+								<text><![CDATA[TOTAL TREATMENT INTERVENTIONS]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table_TD" height="13" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="60" height="13" isPrintWhenDetailOverflows="true" uuid="7836584c-cf27-4040-a196-9856f9060323"/>
+								<box leftPadding="5" rightPadding="5"/>
+								<textElement>
+									<font fontName="Times New Roman" size="8"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{TOTAL_TREATMENT_INTERVENTIONS}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="54" uuid="119dc2ae-49eb-4334-bca4-5fdf630cebb3">
+						<jr:tableHeader style="table_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table_TH" height="11" rowSpan="1"/>
+						<jr:columnHeader style="table_CH" height="104" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="54" height="100" uuid="cf358212-4aab-41c2-9976-47a85f768bc8"/>
+								<box leftPadding="5" rightPadding="5"/>
+								<textElement rotation="Left">
+									<font fontName="Times New Roman" size="8" isBold="true"/>
+								</textElement>
+								<text><![CDATA[PAYMENT MODE]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table_TD" height="13" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="43" height="13" isPrintWhenDetailOverflows="true" uuid="84c70917-0c74-4d23-a041-7f6c04715fe2"/>
+								<box leftPadding="5" rightPadding="5"/>
+								<textElement>
+									<font fontName="Times New Roman" size="8"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{PAYMENT_MODE}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="69" uuid="70765624-fa20-4581-b27a-638ae77257a1">
+						<jr:tableHeader style="table_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table_TH" height="11" rowSpan="1"/>
+						<jr:columnHeader style="table_CH" height="104" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="69" height="100" uuid="0a9dc31c-a228-4a63-a335-684447550b81"/>
+								<box leftPadding="5" rightPadding="5"/>
+								<textElement rotation="Left">
+									<font fontName="Times New Roman" size="8" isBold="true"/>
+								</textElement>
+								<text><![CDATA[AMOUNT KSH]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table_TD" height="13" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="69" height="13" isPrintWhenDetailOverflows="true" uuid="a85d8e71-f418-45c9-811f-6afa5c046114"/>
+								<box leftPadding="5" rightPadding="5"/>
+								<textElement>
+									<font fontName="Times New Roman" size="8"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{AMOUNT_KSH}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="58134d60-0d18-4438-a586-6f74f7fe299c">
+						<jr:tableHeader style="table_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table_TH" height="11" rowSpan="1"/>
+						<jr:columnHeader style="table_CH" height="104" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="100" uuid="40ab6733-1650-4945-984a-5f59bf469569"/>
+								<box leftPadding="5" rightPadding="5"/>
+								<textElement rotation="Left">
+									<font fontName="Times New Roman" size="8" isBold="true"/>
+								</textElement>
+								<text><![CDATA[RECEIPT INVOICE NUMBER]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table_TD" height="13" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="90" height="13" isPrintWhenDetailOverflows="true" uuid="223d1e7a-fa28-4b5c-8a28-f044081060c5"/>
+								<box leftPadding="5" rightPadding="5"/>
+								<textElement>
+									<font fontName="Times New Roman" size="8"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{RECEIPT_INVOICE_NUMBER}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="60" uuid="310a366e-2dd7-4696-8e79-5677970b2209">
+						<jr:tableHeader style="table_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table_TH" height="11" rowSpan="1"/>
+						<jr:columnHeader style="table_CH" height="104" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="60" height="100" uuid="b0dcf8c2-4015-474e-ab4c-fad9688ba251"/>
+								<box leftPadding="5" rightPadding="5"/>
+								<textElement rotation="Left">
+									<font fontName="Times New Roman" size="8" isBold="true"/>
+								</textElement>
+								<text><![CDATA[REFERRALS I N]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table_TD" height="13" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="60" height="13" isPrintWhenDetailOverflows="true" uuid="4933f3db-ccc3-497e-a908-39d38d40135d"/>
+								<box leftPadding="5" rightPadding="5"/>
+								<textElement>
+									<font fontName="Times New Roman" size="8"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{REFERRALS_IN}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="56" uuid="ce78b07b-0866-47c3-9302-bde828c20b08">
+						<jr:tableHeader style="table_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table_TH" height="11" rowSpan="1"/>
+						<jr:columnHeader style="table_CH" height="104" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="56" height="100" uuid="1c0722d5-d764-45f1-a8b1-0c8d4e540257"/>
+								<box leftPadding="5" rightPadding="5"/>
+								<textElement rotation="Left">
+									<font fontName="Times New Roman" size="8" isBold="true"/>
+								</textElement>
+								<text><![CDATA[REFERRAL OUT]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table_TD" height="13" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="56" height="13" isPrintWhenDetailOverflows="true" uuid="71a64f6f-91a0-4d20-adea-60fab78628a6"/>
+								<box leftPadding="5" rightPadding="5"/>
+								<textElement>
+									<font fontName="Times New Roman" size="8"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{REFERRAL_OUT}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="63" uuid="5968be35-15e7-4b56-bd18-a352f96d4331">
+						<jr:tableHeader style="table_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table_TH" height="11" rowSpan="1"/>
+						<jr:columnHeader style="table_CH" height="104" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="63" height="100" uuid="873d6b2f-1aa3-4a2f-97a8-120a3a3d4a53"/>
+								<box leftPadding="5" rightPadding="5"/>
+								<textElement rotation="Left">
+									<font fontName="Times New Roman" size="8" isBold="true"/>
+								</textElement>
+								<text><![CDATA[REMARKS OUTCOMES]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table_TD" height="13" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="63" height="13" isPrintWhenDetailOverflows="true" uuid="f73ac626-d12b-4c8c-9524-cebda9b7dfcf"/>
+								<box leftPadding="5" rightPadding="5"/>
+								<textElement>
+									<font fontName="Times New Roman" size="8"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{REMARKS_OUTCOMES}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="905c18a2-7507-491a-b2f8-5205830d7e49">
+						<jr:tableHeader style="table_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table_TH" height="11" rowSpan="1"/>
+						<jr:columnHeader style="table_CH" height="104" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="100" uuid="9d4b325b-7b05-46bc-8ca6-28063c3ceeec"/>
+								<box leftPadding="5" rightPadding="5"/>
+								<textElement rotation="Left">
+									<font fontName="Times New Roman" size="8" isBold="true"/>
+								</textElement>
+								<text><![CDATA[TCA]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table_TD" height="13" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="90" height="13" isPrintWhenDetailOverflows="true" uuid="3d88a3b6-91a0-4fcc-9bfd-f2dfbd2a4045"/>
+								<box leftPadding="5" rightPadding="5"/>
+								<textElement>
+									<font fontName="Times New Roman" size="8"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{TCA}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="2e58e217-b0bf-4895-a498-ea59572dcc6a">
+						<jr:tableHeader style="table_TH" height="0" rowSpan="1"/>
+						<jr:tableFooter style="table_TH" height="11" rowSpan="1"/>
+						<jr:columnHeader style="table_CH" height="104" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="100" uuid="1802f819-09cf-4de2-9e22-3516056ee1d4"/>
+								<box leftPadding="5" rightPadding="5"/>
+								<textElement rotation="Left">
+									<font fontName="Times New Roman" size="8" isBold="true"/>
+								</textElement>
+								<text><![CDATA[OFFICER ATTENDING]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table_TD" height="13" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="90" height="13" isPrintWhenDetailOverflows="true" uuid="853f7a75-bf5a-4213-8fa5-edae5eaf0e68"/>
+								<box leftPadding="5" rightPadding="5"/>
+								<textElement>
+									<font fontName="Times New Roman" size="8"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{OFFICER_ATTENDING}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

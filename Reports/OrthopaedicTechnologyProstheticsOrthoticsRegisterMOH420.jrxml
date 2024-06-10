@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Register MOH 420" pageWidth="1684" pageHeight="1190" orientation="Landscape" columnWidth="1644" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="207d11cf-ae15-424f-b774-a14b9b7315a2">
 	<property name="ireport.zoom" value="1.0"/>
-	<property name="ireport.x" value="5"/>
-	<property name="ireport.y" value="336"/>
+	<property name="ireport.x" value="570"/>
+	<property name="ireport.y" value="0"/>
 	<style name="table">
 		<box>
 			<pen lineWidth="1.0" lineColor="#000000"/>
@@ -68,7 +68,7 @@
 	<title>
 		<band height="668" splitType="Stretch">
 			<rectangle>
-				<reportElement x="240" y="485" width="1049" height="160" uuid="5e4ee14f-2af2-4bfb-b3ac-9f42bbf6013f"/>
+				<reportElement x="296" y="485" width="1049" height="160" uuid="5e4ee14f-2af2-4bfb-b3ac-9f42bbf6013f"/>
 			</rectangle>
 			<staticText>
 				<reportElement x="240" y="86" width="1049" height="52" uuid="81e673cc-769b-437d-92a3-f9bbb5bd4dcf"/>
@@ -79,84 +79,84 @@
 ]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="473" y="485" width="790" height="20" uuid="4c3ab1e4-71c7-4908-a8bf-70695707bb7b"/>
+				<reportElement x="529" y="485" width="790" height="20" uuid="4c3ab1e4-71c7-4908-a8bf-70695707bb7b"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="Times New Roman" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{COUNTY}]]></textFieldExpression>
 			</textField>
 			<line>
-				<reportElement x="240" y="510" width="1049" height="1" uuid="cd693674-8414-4104-88e7-6cf06f48065b"/>
+				<reportElement x="296" y="510" width="1049" height="1" uuid="cd693674-8414-4104-88e7-6cf06f48065b"/>
 			</line>
 			<line>
-				<reportElement x="240" y="534" width="1049" height="1" uuid="ea553d0e-e1e4-4f9a-a807-8df920215839"/>
+				<reportElement x="296" y="534" width="1049" height="1" uuid="ea553d0e-e1e4-4f9a-a807-8df920215839"/>
 			</line>
 			<line>
-				<reportElement x="240" y="555" width="1049" height="1" uuid="c1caebb6-2727-4dd7-bb13-1896b28a8b1a"/>
+				<reportElement x="296" y="555" width="1049" height="1" uuid="c1caebb6-2727-4dd7-bb13-1896b28a8b1a"/>
 			</line>
 			<line>
-				<reportElement x="240" y="580" width="1049" height="1" uuid="4817e0c1-a581-4be7-bce3-e03968a5aed8"/>
+				<reportElement x="296" y="580" width="1049" height="1" uuid="4817e0c1-a581-4be7-bce3-e03968a5aed8"/>
 			</line>
 			<line>
-				<reportElement x="240" y="602" width="1049" height="1" uuid="02ac4255-5d39-4049-82f5-9073b587c5b9"/>
+				<reportElement x="296" y="602" width="1049" height="1" uuid="02ac4255-5d39-4049-82f5-9073b587c5b9"/>
 			</line>
 			<line>
-				<reportElement x="462" y="485" width="1" height="160" uuid="bc0c04c9-1c40-4a56-84a0-c7c4f131bab2"/>
+				<reportElement x="518" y="485" width="1" height="160" uuid="bc0c04c9-1c40-4a56-84a0-c7c4f131bab2"/>
 			</line>
 			<textField>
-				<reportElement x="473" y="515" width="790" height="20" uuid="6fdcb1de-043e-4099-a15f-1e873c4793ad"/>
+				<reportElement x="529" y="515" width="790" height="20" uuid="6fdcb1de-043e-4099-a15f-1e873c4793ad"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="Times New Roman" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{SUB_COUNTY}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="473" y="535" width="790" height="20" uuid="a53feafe-9784-4335-938c-a0d4ce288ab6"/>
+				<reportElement x="529" y="535" width="790" height="20" uuid="a53feafe-9784-4335-938c-a0d4ce288ab6"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="Times New Roman" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{HEALTH_FACILITY}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="473" y="561" width="100" height="20" uuid="c13bf0eb-6e76-4c3b-8a96-72d81c21b723"/>
+				<reportElement x="529" y="561" width="100" height="20" uuid="c13bf0eb-6e76-4c3b-8a96-72d81c21b723"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="Times New Roman" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{KMHFL_CODE}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="473" y="583" width="100" height="20" uuid="1ae1d5b1-c4e2-4187-bb89-4170c9b4ece6"/>
+				<reportElement x="529" y="583" width="100" height="20" uuid="1ae1d5b1-c4e2-4187-bb89-4170c9b4ece6"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="Times New Roman" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{FACILITY_TYPE}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="473" y="624" width="171" height="20" uuid="cbbe065c-dba5-4c2a-8123-8506ede469ea"/>
+				<reportElement x="529" y="624" width="171" height="20" uuid="cbbe065c-dba5-4c2a-8123-8506ede469ea"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="Times New Roman" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{START_DATE}]]></textFieldExpression>
 			</textField>
 			<line>
-				<reportElement x="792" y="600" width="1" height="45" uuid="2c34a54b-bc3d-4511-9d49-164c5178c779"/>
+				<reportElement x="848" y="600" width="1" height="45" uuid="2c34a54b-bc3d-4511-9d49-164c5178c779"/>
 			</line>
 			<textField>
-				<reportElement x="916" y="624" width="286" height="20" uuid="90204376-a898-42d7-90be-c0334ef7dbb1"/>
+				<reportElement x="972" y="624" width="286" height="20" uuid="90204376-a898-42d7-90be-c0334ef7dbb1"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="Times New Roman" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{END_DATE}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="916" y="604" width="277" height="20" uuid="d66bccf8-d499-48c3-8b77-6a676ddaf874"/>
+				<reportElement x="972" y="604" width="277" height="20" uuid="d66bccf8-d499-48c3-8b77-6a676ddaf874"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="Times New Roman" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{MANNING_AGENCY}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="277" y="485" width="174" height="20" uuid="c268f0d2-7e08-43ea-b657-e47cfc6786b1"/>
+				<reportElement x="333" y="485" width="174" height="20" uuid="c268f0d2-7e08-43ea-b657-e47cfc6786b1"/>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
 					<font fontName="Times New Roman" size="12" isBold="true"/>
 				</textElement>
@@ -164,35 +164,35 @@
 ]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="277" y="515" width="174" height="20" uuid="104fdaaa-2b93-4c68-90c3-218b330b5c8d"/>
+				<reportElement x="333" y="515" width="174" height="20" uuid="104fdaaa-2b93-4c68-90c3-218b330b5c8d"/>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
 					<font fontName="Times New Roman" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Sub County:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="277" y="535" width="174" height="20" uuid="9230c284-1627-42b5-ae75-1fbc03ec4ed2"/>
+				<reportElement x="333" y="535" width="174" height="20" uuid="9230c284-1627-42b5-ae75-1fbc03ec4ed2"/>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
 					<font fontName="Times New Roman" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Health Facility:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="277" y="561" width="174" height="20" uuid="06485cf2-31f0-4b22-a0a4-ff96a466e584"/>
+				<reportElement x="333" y="561" width="174" height="20" uuid="06485cf2-31f0-4b22-a0a4-ff96a466e584"/>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
 					<font fontName="Times New Roman" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[KMHFL Code:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="277" y="583" width="174" height="20" uuid="734a44ad-8912-426e-9ea1-321aa8d21b21"/>
+				<reportElement x="333" y="583" width="174" height="20" uuid="734a44ad-8912-426e-9ea1-321aa8d21b21"/>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
 					<font fontName="Times New Roman" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Facility Type:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="277" y="605" width="174" height="20" uuid="66dce0cb-a549-442b-8a7c-da6882e93e0e"/>
+				<reportElement x="333" y="605" width="174" height="20" uuid="66dce0cb-a549-442b-8a7c-da6882e93e0e"/>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
 					<font fontName="Times New Roman" size="12" isBold="true"/>
 				</textElement>
@@ -200,21 +200,21 @@
 ]]></text>
 			</staticText>
 			<line>
-				<reportElement x="240" y="624" width="1049" height="1" uuid="45f332fc-29c5-412c-b3d2-eeaf95b45ad1"/>
+				<reportElement x="296" y="624" width="1049" height="1" uuid="45f332fc-29c5-412c-b3d2-eeaf95b45ad1"/>
 			</line>
 			<staticText>
-				<reportElement x="277" y="625" width="174" height="20" uuid="29c8ff70-a7ad-47f1-beac-2319d6c0b08a"/>
+				<reportElement x="333" y="625" width="174" height="20" uuid="29c8ff70-a7ad-47f1-beac-2319d6c0b08a"/>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
 					<font fontName="Times New Roman" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Start Date:]]></text>
 			</staticText>
 			<image scaleImage="RealSize" onErrorType="Blank">
-				<reportElement x="629" y="174" width="261" height="169" uuid="41e6ae62-c4d9-4f95-9c05-ddfe0189ffab"/>
+				<reportElement x="669" y="174" width="261" height="169" uuid="41e6ae62-c4d9-4f95-9c05-ddfe0189ffab"/>
 				<imageExpression><![CDATA[$P{logo}]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement x="228" y="383" width="1049" height="52" uuid="d01c5c35-01e8-483b-9e0c-41c491114e39"/>
+				<reportElement x="284" y="383" width="1049" height="52" uuid="d01c5c35-01e8-483b-9e0c-41c491114e39"/>
 				<textElement textAlignment="Center">
 					<font fontName="Times New Roman" size="40" isBold="true"/>
 				</textElement>
@@ -225,6 +225,27 @@
 			<break>
 				<reportElement x="0" y="662" width="100" height="1" uuid="d3ee154e-6fc0-41fe-bd17-c07646933b2b"/>
 			</break>
+			<staticText>
+				<reportElement x="848" y="605" width="110" height="20" uuid="a6fc2328-fb31-44c3-9368-6f502d8c3511"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MANNING AGENCY]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="848" y="624" width="110" height="20" uuid="c34dd283-7827-4d52-9023-4f6470093686"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[END DATE]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="529" y="605" width="292" height="20" uuid="c6c6ebcf-7523-4d39-ae56-3a4e45aecf82"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{SERVICE_AREA}]]></textFieldExpression>
+			</textField>
 		</band>
 	</title>
 	<columnHeader>
