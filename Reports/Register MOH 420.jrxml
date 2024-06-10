@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Register MOH 420" pageWidth="1684" pageHeight="1190" orientation="Landscape" columnWidth="1644" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="207d11cf-ae15-424f-b774-a14b9b7315a2">
 	<property name="ireport.zoom" value="1.0"/>
-	<property name="ireport.x" value="130"/>
-	<property name="ireport.y" value="0"/>
+	<property name="ireport.x" value="5"/>
+	<property name="ireport.y" value="336"/>
 	<style name="table">
 		<box>
 			<pen lineWidth="1.0" lineColor="#000000"/>
@@ -66,7 +66,7 @@
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="1041" splitType="Stretch">
+		<band height="668" splitType="Stretch">
 			<rectangle>
 				<reportElement x="240" y="485" width="1049" height="160" uuid="5e4ee14f-2af2-4bfb-b3ac-9f42bbf6013f"/>
 			</rectangle>
@@ -222,10 +222,17 @@
 
 ]]></text>
 			</staticText>
+			<break>
+				<reportElement x="0" y="662" width="100" height="1" uuid="d3ee154e-6fc0-41fe-bd17-c07646933b2b"/>
+			</break>
 		</band>
 	</title>
 	<columnHeader>
-		<band height="10" splitType="Stretch"/>
+		<band height="10" splitType="Stretch">
+			<break>
+				<reportElement x="0" y="0" width="100" height="1" uuid="83b72d2c-6124-426c-b24c-faad078fea28"/>
+			</break>
+		</band>
 	</columnHeader>
 	<detail>
 		<band height="31" splitType="Stretch">

@@ -20,7 +20,7 @@ public class Main {
 
   public static void main(String[] args) {
     System.out.println("Loading .......");
- stockMovementReport();
+ //stockMovementReport();
     RegisterMOH420();
   }
 
@@ -30,7 +30,6 @@ public class Main {
       InputStream input = Files.newInputStream(new File(reportFile).toPath());
       JasperDesign jasperDesign = JRXmlLoader.load(input);
       JasperReport jasperReport = JasperCompileManager.compileReport(jasperDesign);
-
       JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameters, itemsJRBean);
       JasperViewer.viewReport(jasperPrint);
     } catch (Exception e) {
