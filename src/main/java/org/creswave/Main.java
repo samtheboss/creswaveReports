@@ -20,8 +20,8 @@ public class Main {
 
   public static void main(String[] args) {
     System.out.println("Loading .......");
- //stockMovementReport();
-   RegisterMOH420();
+ stockMovementReport();
+  // RegisterMOH420();
    // SpeechLanguageTherapyRegisterMOH418();
   }
 

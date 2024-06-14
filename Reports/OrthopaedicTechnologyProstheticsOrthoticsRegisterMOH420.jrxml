@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Register MOH 420" pageWidth="1684" pageHeight="1190" orientation="Landscape" columnWidth="1644" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="207d11cf-ae15-424f-b774-a14b9b7315a2">
 	<property name="ireport.zoom" value="1.0"/>
-	<property name="ireport.x" value="570"/>
-	<property name="ireport.y" value="0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="336"/>
 	<style name="table">
 		<box>
 			<pen lineWidth="1.0" lineColor="#000000"/>
 		</box>
 	</style>
-	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+	<style name="table_TH" mode="Opaque" backcolor="#12609E">
 		<box>
 			<pen lineWidth="0.5" lineColor="#000000"/>
 		</box>
 	</style>
-	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
-		<box>
+	<style name="table_CH" mode="Opaque" backcolor="#12609E">
+		<box leftPadding="5" rightPadding="5">
 			<pen lineWidth="0.5" lineColor="#000000"/>
 		</box>
 	</style>
@@ -258,7 +258,7 @@
 	<detail>
 		<band height="31" splitType="Stretch">
 			<componentElement>
-				<reportElement key="table" style="table" x="0" y="0" width="1644" height="31" uuid="7f8ccab6-fb31-4169-9e36-3226fbf3d8da"/>
+				<reportElement key="table" style="table" x="0" y="0" width="1644" height="31" forecolor="#FFFFFF" uuid="7f8ccab6-fb31-4169-9e36-3226fbf3d8da"/>
 				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
 					<datasetRun subDataset="Connection" uuid="94c4d8bb-1268-43ff-9622-22349968de42">
 						<dataSourceExpression><![CDATA[$P{CollectionBeanParam}]]></dataSourceExpression>
@@ -568,10 +568,10 @@
 						<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
 						<jr:columnHeader style="table_CH" height="30" rowSpan="1">
 							<staticText>
-								<reportElement x="0" y="0" width="55" height="30" uuid="05d39ce3-cc27-456e-9002-fbf9ece058c3"/>
+								<reportElement x="0" y="0" width="55" height="30" forecolor="#FFFFFF" uuid="05d39ce3-cc27-456e-9002-fbf9ece058c3"/>
 								<box leftPadding="5" rightPadding="0"/>
 								<textElement>
-									<font fontName="Times New Roman" size="9"/>
+									<font fontName="Times New Roman" size="9" isBold="true"/>
 								</textElement>
 								<text><![CDATA[CLIENT / GUARDIAN CONTACTS]]></text>
 							</staticText>
@@ -593,10 +593,10 @@
 						<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
 						<jr:columnHeader style="table_CH" height="30" rowSpan="1">
 							<staticText>
-								<reportElement x="0" y="0" width="68" height="30" uuid="857ef4f8-6573-4199-b6b3-93eb60984a84"/>
+								<reportElement x="0" y="0" width="68" height="30" forecolor="#FFFFFF" uuid="857ef4f8-6573-4199-b6b3-93eb60984a84"/>
 								<box leftPadding="5" rightPadding="0"/>
 								<textElement>
-									<font fontName="Times New Roman" size="9"/>
+									<font fontName="Times New Roman" size="9" isBold="true"/>
 								</textElement>
 								<text><![CDATA[OCCUPATION]]></text>
 							</staticText>
@@ -618,7 +618,7 @@
 						<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
 						<jr:columnHeader style="table_CH" height="30" rowSpan="1">
 							<staticText>
-								<reportElement x="0" y="0" width="73" height="30" uuid="a3faedd0-0344-498d-bfa2-2713355ed4a5"/>
+								<reportElement x="0" y="0" width="73" height="30" forecolor="#FFFFFF" uuid="a3faedd0-0344-498d-bfa2-2713355ed4a5"/>
 								<box leftPadding="5" rightPadding="0"/>
 								<textElement>
 									<font fontName="Times New Roman" size="9"/>
@@ -643,10 +643,10 @@
 						<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
 						<jr:columnHeader style="table_CH" height="30" rowSpan="1">
 							<staticText>
-								<reportElement x="0" y="0" width="69" height="30" uuid="45603d24-0300-4c87-91ac-75ba2cabe049"/>
+								<reportElement x="0" y="0" width="69" height="30" forecolor="#FFFFFF" uuid="45603d24-0300-4c87-91ac-75ba2cabe049"/>
 								<box leftPadding="5" rightPadding="0"/>
 								<textElement>
-									<font fontName="Times New Roman" size="9"/>
+									<font fontName="Times New Roman" size="9" isBold="true"/>
 								</textElement>
 								<text><![CDATA[UNDERLYING CONDITION]]></text>
 							</staticText>
@@ -668,10 +668,10 @@
 						<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
 						<jr:columnHeader style="table_CH" height="30" rowSpan="1">
 							<staticText>
-								<reportElement x="0" y="0" width="77" height="30" uuid="f3b5e4ea-f1e1-4f56-a319-9a5df1d09ced"/>
+								<reportElement x="0" y="0" width="77" height="30" forecolor="#FFFFFF" uuid="f3b5e4ea-f1e1-4f56-a319-9a5df1d09ced"/>
 								<box leftPadding="5" rightPadding="0"/>
 								<textElement>
-									<font fontName="Times New Roman" size="9"/>
+									<font fontName="Times New Roman" size="9" isBold="true"/>
 								</textElement>
 								<text><![CDATA[TREATMENT INTERVENTION]]></text>
 							</staticText>
@@ -693,10 +693,10 @@
 						<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
 						<jr:columnHeader style="table_CH" height="30" rowSpan="1">
 							<staticText>
-								<reportElement x="0" y="0" width="90" height="30" uuid="8e595978-bb2b-4b00-8454-6fa13e3a5097"/>
+								<reportElement x="0" y="0" width="90" height="30" forecolor="#FFFFFF" uuid="8e595978-bb2b-4b00-8454-6fa13e3a5097"/>
 								<box leftPadding="5" rightPadding="0"/>
 								<textElement>
-									<font fontName="Times New Roman" size="9"/>
+									<font fontName="Times New Roman" size="9" isBold="true"/>
 								</textElement>
 								<text><![CDATA[TYPE OF ASSISTIVE TECHNOLOGY]]></text>
 							</staticText>
@@ -718,10 +718,10 @@
 						<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
 						<jr:columnHeader style="table_CH" height="30" rowSpan="1">
 							<staticText>
-								<reportElement x="0" y="0" width="90" height="30" uuid="3e2ab951-c70a-49af-be9a-0b16c0046d37"/>
+								<reportElement x="0" y="0" width="90" height="30" forecolor="#FFFFFF" uuid="3e2ab951-c70a-49af-be9a-0b16c0046d37"/>
 								<box leftPadding="5" rightPadding="0"/>
 								<textElement>
-									<font fontName="Times New Roman" size="7" isBold="true"/>
+									<font fontName="Times New Roman" size="9" isBold="true"/>
 								</textElement>
 								<text><![CDATA[BR OUTREACH MOBILE CLINICS SPECIAL CLINICS]]></text>
 							</staticText>
@@ -743,10 +743,10 @@
 						<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
 						<jr:columnHeader style="table_CH" height="30" rowSpan="1">
 							<staticText>
-								<reportElement x="0" y="0" width="57" height="30" uuid="00746d5d-8765-4f5e-b9a4-2ab6d65c4767"/>
+								<reportElement x="0" y="0" width="57" height="30" forecolor="#FFFFFF" uuid="00746d5d-8765-4f5e-b9a4-2ab6d65c4767"/>
 								<box leftPadding="5" rightPadding="0"/>
 								<textElement>
-									<font fontName="Times New Roman" size="9"/>
+									<font fontName="Times New Roman" size="9" isBold="true"/>
 								</textElement>
 								<text><![CDATA[PAYMENT MODE]]></text>
 							</staticText>
@@ -768,10 +768,10 @@
 						<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
 						<jr:columnHeader style="table_CH" height="30" rowSpan="1">
 							<staticText>
-								<reportElement x="0" y="0" width="49" height="30" uuid="9b90033e-5a45-4902-9ba2-c95cac12caf9"/>
+								<reportElement x="0" y="0" width="49" height="30" forecolor="#FFFFFF" uuid="9b90033e-5a45-4902-9ba2-c95cac12caf9"/>
 								<box leftPadding="5" rightPadding="0"/>
 								<textElement>
-									<font fontName="Times New Roman" size="9"/>
+									<font fontName="Times New Roman" size="9" isBold="true"/>
 								</textElement>
 								<text><![CDATA[RECEIPT NUMBER]]></text>
 							</staticText>
@@ -793,10 +793,10 @@
 						<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
 						<jr:columnHeader style="table_CH" height="30" rowSpan="1">
 							<staticText>
-								<reportElement x="0" y="0" width="58" height="30" uuid="4fb1476e-52ce-47e7-a025-c847c2e27b16"/>
+								<reportElement x="0" y="0" width="58" height="30" forecolor="#FFFFFF" uuid="4fb1476e-52ce-47e7-a025-c847c2e27b16"/>
 								<box leftPadding="5" rightPadding="0"/>
 								<textElement>
-									<font fontName="Times New Roman" size="9"/>
+									<font fontName="Times New Roman" size="9" isBold="true"/>
 								</textElement>
 								<text><![CDATA[REFERRALS TO]]></text>
 							</staticText>
@@ -818,10 +818,10 @@
 						<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
 						<jr:columnHeader style="table_CH" height="30" rowSpan="1">
 							<staticText>
-								<reportElement x="0" y="0" width="56" height="30" uuid="76fdcdbe-80cb-4326-932a-387b53e99654"/>
+								<reportElement x="0" y="0" width="56" height="30" forecolor="#FFFFFF" uuid="76fdcdbe-80cb-4326-932a-387b53e99654"/>
 								<box leftPadding="5" rightPadding="0"/>
 								<textElement>
-									<font fontName="Times New Roman" size="7"/>
+									<font fontName="Times New Roman" size="9" isBold="true"/>
 								</textElement>
 								<text><![CDATA[NEXT APPOINTMENT DATE]]></text>
 							</staticText>
@@ -843,10 +843,10 @@
 						<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
 						<jr:columnHeader style="table_CH" height="30" rowSpan="1">
 							<staticText>
-								<reportElement x="0" y="0" width="53" height="30" uuid="58d9b9ce-ad75-40f0-80d8-4c7881007e55"/>
+								<reportElement x="0" y="0" width="53" height="30" forecolor="#FFFFFF" uuid="58d9b9ce-ad75-40f0-80d8-4c7881007e55"/>
 								<box leftPadding="5" rightPadding="0"/>
 								<textElement>
-									<font fontName="Times New Roman" size="9"/>
+									<font fontName="Times New Roman" size="9" isBold="true"/>
 								</textElement>
 								<text><![CDATA[REMARKS OUTCOME]]></text>
 							</staticText>
@@ -868,10 +868,10 @@
 						<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
 						<jr:columnHeader style="table_CH" height="30" rowSpan="1">
 							<staticText>
-								<reportElement x="0" y="0" width="50" height="30" uuid="b80c658b-479f-48fb-b246-aae6d83fcfe3"/>
+								<reportElement x="0" y="0" width="50" height="30" forecolor="#FFFFFF" uuid="b80c658b-479f-48fb-b246-aae6d83fcfe3"/>
 								<box leftPadding="5" rightPadding="0"/>
 								<textElement>
-									<font fontName="Times New Roman" size="9"/>
+									<font fontName="Times New Roman" size="9" isBold="true"/>
 								</textElement>
 								<text><![CDATA[TIMELINE]]></text>
 							</staticText>

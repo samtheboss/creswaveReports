@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="MOH 744B" pageWidth="1000" pageHeight="500" columnWidth="960" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9b071272-af2b-4be1-b6a9-9eece681ca00">
 	<property name="ireport.zoom" value="1.5"/>
-	<property name="ireport.x" value="510"/>
-	<property name="ireport.y" value="36"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="96"/>
 	<parameter name="FromDate" class="java.lang.String"/>
 	<parameter name="ToDate" class="java.lang.String"/>
 	<parameter name="CompanyDetials" class="java.lang.String"/>
@@ -104,7 +104,7 @@
 	<columnHeader>
 		<band height="32" splitType="Stretch">
 			<staticText>
-				<reportElement mode="Opaque" x="88" y="2" width="226" height="30" forecolor="#000000" backcolor="#3AA6B9" uuid="d046206a-14c2-487d-ab90-6399af0d64a1"/>
+				<reportElement mode="Opaque" x="88" y="2" width="226" height="30" forecolor="#FFFFFF" backcolor="#12609E" uuid="d046206a-14c2-487d-ab90-6399af0d64a1"/>
 				<box topPadding="5" leftPadding="5" rightPadding="5">
 					<pen lineWidth="0.5"/>
 					<topPen lineWidth="0.5"/>
@@ -113,12 +113,12 @@
 					<rightPen lineWidth="0.5"/>
 				</box>
 				<textElement>
-					<font fontName="Times New Roman" size="9" isBold="true"/>
+					<font fontName="Times New Roman" size="9" isBold="false"/>
 				</textElement>
 				<text><![CDATA[ITEM_NAME]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="0" y="2" width="88" height="30" forecolor="#000000" backcolor="#3AA6B9" uuid="94785357-033b-4aeb-b103-a0caa4fd06ae"/>
+				<reportElement mode="Opaque" x="0" y="2" width="88" height="30" forecolor="#FFFFFF" backcolor="#12609E" uuid="94785357-033b-4aeb-b103-a0caa4fd06ae"/>
 				<box topPadding="5" leftPadding="5" rightPadding="5">
 					<pen lineWidth="0.5"/>
 					<topPen lineWidth="0.5"/>
@@ -127,12 +127,12 @@
 					<rightPen lineWidth="0.5"/>
 				</box>
 				<textElement>
-					<font fontName="Times New Roman" size="9" isBold="true"/>
+					<font fontName="Times New Roman" size="9" isBold="false"/>
 				</textElement>
 				<text><![CDATA[ITEM_CODE]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="314" y="2" width="48" height="30" forecolor="#000000" backcolor="#3AA6B9" uuid="edddbfdb-5de2-44d0-ac69-09467c567db7"/>
+				<reportElement mode="Opaque" x="314" y="2" width="48" height="30" forecolor="#FFFFFF" backcolor="#12609E" uuid="edddbfdb-5de2-44d0-ac69-09467c567db7"/>
 				<box topPadding="5" leftPadding="5" rightPadding="5">
 					<pen lineWidth="0.5"/>
 					<topPen lineWidth="0.5"/>
@@ -141,12 +141,12 @@
 					<rightPen lineWidth="0.5"/>
 				</box>
 				<textElement>
-					<font fontName="Times New Roman" size="9" isBold="true"/>
+					<font fontName="Times New Roman" size="9" isBold="false"/>
 				</textElement>
 				<text><![CDATA[UOM]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="359" y="2" width="60" height="30" forecolor="#000000" backcolor="#3AA6B9" uuid="bdc301c5-5c8b-4c34-9dff-177f48a59f00"/>
+				<reportElement mode="Opaque" x="359" y="2" width="60" height="30" forecolor="#FFFFFF" backcolor="#12609E" uuid="bdc301c5-5c8b-4c34-9dff-177f48a59f00"/>
 				<box topPadding="5" leftPadding="5" rightPadding="5">
 					<pen lineWidth="0.5"/>
 					<topPen lineWidth="0.5"/>
@@ -155,12 +155,12 @@
 					<rightPen lineWidth="0.5"/>
 				</box>
 				<textElement textAlignment="Right">
-					<font fontName="Times New Roman" size="9" isBold="true"/>
+					<font fontName="Times New Roman" size="9" isBold="false"/>
 				</textElement>
 				<text><![CDATA[OPENING BALANCE]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="419" y="2" width="60" height="30" forecolor="#000000" backcolor="#3AA6B9" uuid="0a8f3779-9b26-4208-99db-4ee8e57ac915"/>
+				<reportElement mode="Opaque" x="419" y="2" width="60" height="30" forecolor="#FFFFFF" backcolor="#12609E" uuid="0a8f3779-9b26-4208-99db-4ee8e57ac915"/>
 				<box topPadding="5" leftPadding="5" rightPadding="5">
 					<pen lineWidth="0.5"/>
 					<topPen lineWidth="0.5"/>
@@ -169,12 +169,12 @@
 					<rightPen lineWidth="0.5"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Top">
-					<font fontName="Times New Roman" size="9" isBold="true"/>
+					<font fontName="Times New Roman" size="9" isBold="false"/>
 				</textElement>
 				<text><![CDATA[TOTAL RECEIVED]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="479" y="2" width="60" height="30" forecolor="#000000" backcolor="#3AA6B9" uuid="76f215e1-8a67-45d8-b139-a6b9e3dd89a7"/>
+				<reportElement mode="Opaque" x="479" y="2" width="60" height="30" forecolor="#FFFFFF" backcolor="#12609E" uuid="76f215e1-8a67-45d8-b139-a6b9e3dd89a7"/>
 				<box topPadding="5" leftPadding="5" rightPadding="5">
 					<pen lineWidth="0.5"/>
 					<topPen lineWidth="0.5"/>
@@ -183,12 +183,12 @@
 					<rightPen lineWidth="0.5"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Top">
-					<font fontName="Times New Roman" size="9" isBold="true"/>
+					<font fontName="Times New Roman" size="9" isBold="false"/>
 				</textElement>
 				<text><![CDATA[TOTAL DISPENSED]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="539" y="2" width="68" height="30" forecolor="#000000" backcolor="#3AA6B9" uuid="cd15d31f-ccf7-4b86-baba-3d1e2dce3b1e"/>
+				<reportElement mode="Opaque" x="539" y="2" width="68" height="30" forecolor="#FFFFFF" backcolor="#12609E" uuid="cd15d31f-ccf7-4b86-baba-3d1e2dce3b1e"/>
 				<box topPadding="5" leftPadding="5" rightPadding="5">
 					<pen lineWidth="0.5"/>
 					<topPen lineWidth="0.5"/>
@@ -197,12 +197,12 @@
 					<rightPen lineWidth="0.5"/>
 				</box>
 				<textElement textAlignment="Right">
-					<font fontName="Times New Roman" size="9" isBold="true"/>
+					<font fontName="Times New Roman" size="9" isBold="false"/>
 				</textElement>
 				<text><![CDATA[POSITIVE ADJUSTMENT]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="606" y="2" width="65" height="30" forecolor="#000000" backcolor="#3AA6B9" uuid="85979061-3cd5-4ca4-9c93-33c07fca56c3"/>
+				<reportElement mode="Opaque" x="606" y="2" width="65" height="30" forecolor="#FFFFFF" backcolor="#12609E" uuid="85979061-3cd5-4ca4-9c93-33c07fca56c3"/>
 				<box topPadding="5" leftPadding="5" rightPadding="5">
 					<pen lineWidth="0.5"/>
 					<topPen lineWidth="0.5"/>
@@ -211,12 +211,12 @@
 					<rightPen lineWidth="0.5"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Top">
-					<font fontName="Times New Roman" size="9" isBold="true"/>
+					<font fontName="Times New Roman" size="9" isBold="false"/>
 				</textElement>
 				<text><![CDATA[NEGATIVE ADJUSTMENT]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="670" y="2" width="60" height="30" forecolor="#000000" backcolor="#3AA6B9" uuid="62cfeb31-d610-490c-b77b-1b830e3b09dc"/>
+				<reportElement mode="Opaque" x="670" y="2" width="60" height="30" forecolor="#FFFFFF" backcolor="#12609E" uuid="62cfeb31-d610-490c-b77b-1b830e3b09dc"/>
 				<box topPadding="5" leftPadding="5" rightPadding="5">
 					<pen lineWidth="0.5"/>
 					<topPen lineWidth="0.5"/>
@@ -225,12 +225,12 @@
 					<rightPen lineWidth="0.5"/>
 				</box>
 				<textElement textAlignment="Right">
-					<font fontName="Times New Roman" size="9" isBold="true"/>
+					<font fontName="Times New Roman" size="9" isBold="false"/>
 				</textElement>
 				<text><![CDATA[CLOSING STOCK]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="729" y="2" width="60" height="30" forecolor="#000000" backcolor="#3AA6B9" uuid="a043b4c1-5d29-47ba-a5a5-40542da04748"/>
+				<reportElement mode="Opaque" x="729" y="2" width="60" height="30" forecolor="#FFFFFF" backcolor="#12609E" uuid="a043b4c1-5d29-47ba-a5a5-40542da04748"/>
 				<box topPadding="5" leftPadding="0" rightPadding="0">
 					<pen lineWidth="0.5"/>
 					<topPen lineWidth="0.5"/>
@@ -239,12 +239,12 @@
 					<rightPen lineWidth="0.5"/>
 				</box>
 				<textElement textAlignment="Right">
-					<font fontName="Times New Roman" size="9" isBold="true"/>
+					<font fontName="Times New Roman" size="9" isBold="false"/>
 				</textElement>
 				<text><![CDATA[SIX_MONTH TO_EXPIRE]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="789" y="2" width="65" height="30" forecolor="#000000" backcolor="#3AA6B9" uuid="4af30e06-221c-461e-9827-3b6fd1598283"/>
+				<reportElement mode="Opaque" x="789" y="2" width="65" height="30" forecolor="#FFFFFF" backcolor="#12609E" uuid="4af30e06-221c-461e-9827-3b6fd1598283"/>
 				<box topPadding="5" leftPadding="0" rightPadding="0">
 					<pen lineWidth="0.5"/>
 					<topPen lineWidth="0.5"/>
@@ -253,12 +253,12 @@
 					<rightPen lineWidth="0.5"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Top">
-					<font fontName="Times New Roman" size="9" isBold="true"/>
+					<font fontName="Times New Roman" size="9" isBold="false"/>
 				</textElement>
 				<text><![CDATA[EXPIRY_DATE]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="854" y="2" width="87" height="30" forecolor="#000000" backcolor="#3AA6B9" uuid="8ee1b34d-4e0f-4dff-a8ee-b6cd84aa8765"/>
+				<reportElement mode="Opaque" x="854" y="2" width="87" height="30" forecolor="#FFFFFF" backcolor="#12609E" uuid="8ee1b34d-4e0f-4dff-a8ee-b6cd84aa8765"/>
 				<box topPadding="5" leftPadding="5" rightPadding="5">
 					<pen lineWidth="0.5"/>
 					<topPen lineWidth="0.5"/>
@@ -267,7 +267,7 @@
 					<rightPen lineWidth="0.5"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Top">
-					<font fontName="Times New Roman" size="9" isBold="true"/>
+					<font fontName="Times New Roman" size="9" isBold="false"/>
 				</textElement>
 				<text><![CDATA[REORDER_QTY]]></text>
 			</staticText>
@@ -278,11 +278,11 @@
 			<textField>
 				<reportElement mode="Transparent" x="88" y="0" width="226" height="13" backcolor="#FFFFFF" uuid="d0a72122-14eb-46f8-a1f1-7cd9b70da6fe"/>
 				<box leftPadding="5" rightPadding="5">
-					<pen lineWidth="0.5" lineStyle="Solid"/>
-					<topPen lineWidth="0.5" lineStyle="Solid"/>
-					<leftPen lineWidth="0.5" lineStyle="Solid"/>
-					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
-					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+					<pen lineWidth="0.5" lineStyle="Dashed"/>
+					<topPen lineWidth="0.5" lineStyle="Dashed"/>
+					<leftPen lineWidth="0.5" lineStyle="Dashed"/>
+					<bottomPen lineWidth="0.5" lineStyle="Dashed"/>
+					<rightPen lineWidth="0.5" lineStyle="Dashed"/>
 				</box>
 				<textElement>
 					<font fontName="Tahoma" size="9"/>
@@ -292,11 +292,11 @@
 			<textField>
 				<reportElement mode="Transparent" x="0" y="0" width="88" height="13" backcolor="#FFFFFF" uuid="120f4df6-a8fa-472a-bed2-a0f17f10ab23"/>
 				<box leftPadding="5" rightPadding="5">
-					<pen lineWidth="0.5" lineStyle="Solid"/>
-					<topPen lineWidth="0.5" lineStyle="Solid"/>
-					<leftPen lineWidth="0.5" lineStyle="Solid"/>
-					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
-					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+					<pen lineWidth="0.5" lineStyle="Dashed"/>
+					<topPen lineWidth="0.5" lineStyle="Dashed"/>
+					<leftPen lineWidth="0.5" lineStyle="Dashed"/>
+					<bottomPen lineWidth="0.5" lineStyle="Dashed"/>
+					<rightPen lineWidth="0.5" lineStyle="Dashed"/>
 				</box>
 				<textElement>
 					<font fontName="Tahoma" size="9"/>
@@ -306,11 +306,11 @@
 			<textField>
 				<reportElement mode="Transparent" x="314" y="0" width="45" height="13" backcolor="#FFFFFF" uuid="e6288cdc-dd73-4bd3-8182-72ceec5b6528"/>
 				<box leftPadding="5" rightPadding="5">
-					<pen lineWidth="0.5" lineStyle="Solid"/>
-					<topPen lineWidth="0.5" lineStyle="Solid"/>
-					<leftPen lineWidth="0.5" lineStyle="Solid"/>
-					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
-					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+					<pen lineWidth="0.5" lineStyle="Dashed"/>
+					<topPen lineWidth="0.5" lineStyle="Dashed"/>
+					<leftPen lineWidth="0.5" lineStyle="Dashed"/>
+					<bottomPen lineWidth="0.5" lineStyle="Dashed"/>
+					<rightPen lineWidth="0.5" lineStyle="Dashed"/>
 				</box>
 				<textElement>
 					<font fontName="Tahoma" size="9"/>
@@ -320,11 +320,11 @@
 			<textField>
 				<reportElement mode="Transparent" x="359" y="0" width="60" height="13" backcolor="#FFFFFF" uuid="13b53239-87f9-477b-9143-99bc9067694d"/>
 				<box leftPadding="5" rightPadding="5">
-					<pen lineWidth="0.5" lineStyle="Solid"/>
-					<topPen lineWidth="0.5" lineStyle="Solid"/>
-					<leftPen lineWidth="0.5" lineStyle="Solid"/>
-					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
-					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+					<pen lineWidth="0.5" lineStyle="Dashed"/>
+					<topPen lineWidth="0.5" lineStyle="Dashed"/>
+					<leftPen lineWidth="0.5" lineStyle="Dashed"/>
+					<bottomPen lineWidth="0.5" lineStyle="Dashed"/>
+					<rightPen lineWidth="0.5" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Right">
 					<font fontName="Tahoma" size="9"/>
@@ -334,11 +334,11 @@
 			<textField>
 				<reportElement mode="Transparent" x="419" y="0" width="60" height="13" backcolor="#FFFFFF" uuid="b841565f-89a1-4832-a4e0-58d1ad302bd0"/>
 				<box leftPadding="5" rightPadding="5">
-					<pen lineWidth="0.5" lineStyle="Solid"/>
-					<topPen lineWidth="0.5" lineStyle="Solid"/>
-					<leftPen lineWidth="0.5" lineStyle="Solid"/>
-					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
-					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+					<pen lineWidth="0.5" lineStyle="Dashed"/>
+					<topPen lineWidth="0.5" lineStyle="Dashed"/>
+					<leftPen lineWidth="0.5" lineStyle="Dashed"/>
+					<bottomPen lineWidth="0.5" lineStyle="Dashed"/>
+					<rightPen lineWidth="0.5" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
 					<font fontName="Tahoma" size="9"/>
@@ -348,11 +348,11 @@
 			<textField>
 				<reportElement mode="Transparent" x="479" y="0" width="60" height="13" backcolor="#FFFFFF" uuid="7547f252-fe16-4169-bc3e-eb39a7fab355"/>
 				<box leftPadding="5" rightPadding="5">
-					<pen lineWidth="0.5" lineStyle="Solid"/>
-					<topPen lineWidth="0.5" lineStyle="Solid"/>
-					<leftPen lineWidth="0.5" lineStyle="Solid"/>
-					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
-					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+					<pen lineWidth="0.5" lineStyle="Dashed"/>
+					<topPen lineWidth="0.5" lineStyle="Dashed"/>
+					<leftPen lineWidth="0.5" lineStyle="Dashed"/>
+					<bottomPen lineWidth="0.5" lineStyle="Dashed"/>
+					<rightPen lineWidth="0.5" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
 					<font fontName="Tahoma" size="9"/>
@@ -362,11 +362,11 @@
 			<textField>
 				<reportElement mode="Transparent" x="539" y="0" width="68" height="13" backcolor="#FFFFFF" uuid="190f9b0d-9fde-48e0-b4a2-cc8bf04ab83e"/>
 				<box leftPadding="5" rightPadding="5">
-					<pen lineWidth="0.5" lineStyle="Solid"/>
-					<topPen lineWidth="0.5" lineStyle="Solid"/>
-					<leftPen lineWidth="0.5" lineStyle="Solid"/>
-					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
-					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+					<pen lineWidth="0.5" lineStyle="Dashed"/>
+					<topPen lineWidth="0.5" lineStyle="Dashed"/>
+					<leftPen lineWidth="0.5" lineStyle="Dashed"/>
+					<bottomPen lineWidth="0.5" lineStyle="Dashed"/>
+					<rightPen lineWidth="0.5" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Right">
 					<font fontName="Tahoma" size="9"/>
@@ -376,11 +376,11 @@
 			<textField>
 				<reportElement mode="Transparent" x="607" y="0" width="63" height="13" backcolor="#FFFFFF" uuid="68912185-efe4-4adb-b93e-af437fe1c855"/>
 				<box leftPadding="5" rightPadding="5">
-					<pen lineWidth="0.5" lineStyle="Solid"/>
-					<topPen lineWidth="0.5" lineStyle="Solid"/>
-					<leftPen lineWidth="0.5" lineStyle="Solid"/>
-					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
-					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+					<pen lineWidth="0.5" lineStyle="Dashed"/>
+					<topPen lineWidth="0.5" lineStyle="Dashed"/>
+					<leftPen lineWidth="0.5" lineStyle="Dashed"/>
+					<bottomPen lineWidth="0.5" lineStyle="Dashed"/>
+					<rightPen lineWidth="0.5" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
 					<font fontName="Tahoma" size="9"/>
@@ -390,11 +390,11 @@
 			<textField>
 				<reportElement mode="Transparent" x="670" y="0" width="59" height="13" backcolor="#FFFFFF" uuid="aae93cf4-e30e-4b8f-8d57-a7609114e732"/>
 				<box leftPadding="5" rightPadding="5">
-					<pen lineWidth="0.5" lineStyle="Solid"/>
-					<topPen lineWidth="0.5" lineStyle="Solid"/>
-					<leftPen lineWidth="0.5" lineStyle="Solid"/>
-					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
-					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+					<pen lineWidth="0.5" lineStyle="Dashed"/>
+					<topPen lineWidth="0.5" lineStyle="Dashed"/>
+					<leftPen lineWidth="0.5" lineStyle="Dashed"/>
+					<bottomPen lineWidth="0.5" lineStyle="Dashed"/>
+					<rightPen lineWidth="0.5" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Right">
 					<font fontName="Tahoma" size="9"/>
@@ -404,11 +404,11 @@
 			<textField>
 				<reportElement mode="Transparent" x="729" y="0" width="60" height="13" backcolor="#FFFFFF" uuid="e8cfb74e-6ed5-423d-83d1-cbe56ffab800"/>
 				<box leftPadding="5" rightPadding="5">
-					<pen lineWidth="0.5" lineStyle="Solid"/>
-					<topPen lineWidth="0.5" lineStyle="Solid"/>
-					<leftPen lineWidth="0.5" lineStyle="Solid"/>
-					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
-					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+					<pen lineWidth="0.5" lineStyle="Dashed"/>
+					<topPen lineWidth="0.5" lineStyle="Dashed"/>
+					<leftPen lineWidth="0.5" lineStyle="Dashed"/>
+					<bottomPen lineWidth="0.5" lineStyle="Dashed"/>
+					<rightPen lineWidth="0.5" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Right">
 					<font fontName="Tahoma" size="9"/>
@@ -418,11 +418,11 @@
 			<textField>
 				<reportElement mode="Transparent" x="789" y="0" width="65" height="13" backcolor="#FFFFFF" uuid="4c714c20-6657-452c-85eb-9820f9a5f250"/>
 				<box leftPadding="5" rightPadding="5">
-					<pen lineWidth="0.5" lineStyle="Solid"/>
-					<topPen lineWidth="0.5" lineStyle="Solid"/>
-					<leftPen lineWidth="0.5" lineStyle="Solid"/>
-					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
-					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+					<pen lineWidth="0.5" lineStyle="Dashed"/>
+					<topPen lineWidth="0.5" lineStyle="Dashed"/>
+					<leftPen lineWidth="0.5" lineStyle="Dashed"/>
+					<bottomPen lineWidth="0.5" lineStyle="Dashed"/>
+					<rightPen lineWidth="0.5" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Top">
 					<font fontName="Tahoma" size="9"/>
@@ -432,11 +432,11 @@
 			<textField>
 				<reportElement mode="Transparent" x="854" y="0" width="87" height="13" backcolor="#FFFFFF" uuid="a9dd1381-d1f2-448c-a11d-41227037bc7a"/>
 				<box leftPadding="5" rightPadding="5">
-					<pen lineWidth="0.5" lineStyle="Solid"/>
-					<topPen lineWidth="0.5" lineStyle="Solid"/>
-					<leftPen lineWidth="0.5" lineStyle="Solid"/>
-					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
-					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+					<pen lineWidth="0.5" lineStyle="Dashed"/>
+					<topPen lineWidth="0.5" lineStyle="Dashed"/>
+					<leftPen lineWidth="0.5" lineStyle="Dashed"/>
+					<bottomPen lineWidth="0.5" lineStyle="Dashed"/>
+					<rightPen lineWidth="0.5" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
 					<font fontName="Tahoma" size="9"/>
